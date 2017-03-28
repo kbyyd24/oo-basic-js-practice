@@ -1,4 +1,5 @@
 describe('person', function () {
+  const Person = require('../../lib/person/Person');
   it('should use introduce method success when invoke person.introduce', function () {
     const name = 'Bryant';
     const age = 22;
