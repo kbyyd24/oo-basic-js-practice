@@ -1,4 +1,5 @@
 describe('student', function () {
+  const Student = require('../../lib/person/Student');
   it('should use introduce success when invoke student.introduce', function () {
     const name = 'Tom';
     const age = 21;
