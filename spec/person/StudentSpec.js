@@ -5,6 +5,6 @@ describe('student', function () {
     const age = 21;
     const classNum = 2;
     const student = new Student(name, age, classNum);
-    expect(student.introduce()).toEqual('I am a Student. I am at Class 2.');
+    expect(student.introduce()).toEqual('My name is Tom. I am 21 years old. I am a Student. I am at Class 2.');
   });
 });
