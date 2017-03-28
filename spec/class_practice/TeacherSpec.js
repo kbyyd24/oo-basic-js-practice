@@ -12,7 +12,7 @@ describe('teacher', function () {
       .toEqual('My name is Tom. I am 21 years old. I am a Teacher. I teach No Class.');
   })
 
-  const Student = require('../../lib/class_practice/Person');
+  const Student = require('../../lib/class_practice/Student');
   it('should introduce teaching student when given a student the teacher is teaching', function () {
     const classObj = new Class(2);
     const student = new Student('Jerry', 12, classObj);
