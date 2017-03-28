@@ -1,5 +1,6 @@
 describe('student', function () {
   const Class = require('../../lib/class_practice/Class');
+  const Student = require('../../lib/class_practice/Student');
   it('should get introduction success when invoke student.introduce', function () {
     const student = new Student('Tom', 21, new Class(2));
     expect(student.introduce())
