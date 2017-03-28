@@ -1,12 +1,12 @@
 describe('teacher', function () {
   const Class = require('../../lib/class_practice/Class');
   const Teacher = require('../../lib/class_practice/Teacher');
-  it('should introduce class when given class', function () {
+  it('should introduce class when given clazz', function () {
     const teacher = new Teacher('Tom', 21, new Class(2));
     expect(teacher.introduce())
       .toEqual('My name is Tom. I am 21 years old. I am a Teacher. I teach Class 2.');
   });
-  it('should not introduce class when given no class', function () {
+  it('should not introduce class when given no clazz', function () {
     const teacher = new Teacher('Tom', 21);
     expect(teacher.introduce())
       .toEqual('My name is Tom. I am 21 years old. I am a Teacher. I teach No Class.');
@@ -14,9 +14,9 @@ describe('teacher', function () {
 
   const Student = require('../../lib/class_practice/Student');
   it('should introduce teaching student when given a student the teacher is teaching', function () {
-    const classObj = new Class(2);
-    const student = new Student('Jerry', 12, classObj);
-    const teacher = new Teacher('Tom', 21, classObj);
+    const clazz = new Class(2);
+    const student = new Student('Jerry', 12, clazz);
+    const teacher = new Teacher('Tom', 21, clazz);
     expect(teacher.introduceWith(student))
       .toEqual('My name is Tom. I am 21 years old. I am a Teacher. I teach Jerry.');
   });
